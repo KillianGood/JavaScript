@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Fourchette</title>
+
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        width: 50%;
+        max-width: 800px;
+        min-width: 480px;
+        margin: 0 auto;
+      }
+
+      .lastResult {
+        color: white;
+        padding: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Fourchette</h1>
+
+    <p>Nous avons sélectionné un nombre aléatoire entre 1 et 100. Voyez si vous pouvez le deviner en 10 tours ou moins. Nous vous dirons si votre estimation était trop élevée ou trop faible.</p>
+
+    <div class="form">
+      <label for="guessField">Entrer un chiffre : </label>
+      <input type="text" id="guessField" class="guessField">
+      <input type="submit" value="Verifier" class="guessSubmit">
+    </div>
+
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+
+    <script src="../scripts/main.js"></script>
+  </body>
+</html>
